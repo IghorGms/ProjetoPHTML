@@ -1,8 +1,14 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: border-box;
+}
+
 
 .box-container{
     display: flex;
     justify-content: center;
-    margin: 350px 50px 0px 50px
+    margin: 300px 0px 0px 0px
 }
 
 .box{
