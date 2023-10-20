@@ -84,7 +84,7 @@ if (empty($_SESSION['errors'])) {
 <body>
     <form action="index.php" method="POST">
         <fieldset>
-            <legend>Olá cliente,</legend>
+            <legend>Olá cliente, Todos os itens com (*) são obrigatorios</legend>
 
             <div class="input-padrao">
                 
@@ -93,26 +93,25 @@ if (empty($_SESSION['errors'])) {
                             foreach ($_SESSION['errors'] as $error) {
                             echo '<div class="error-message">' . $error . '</div>';
                              }
-                            unset($_SESSION['errors']); // Limpe os erros da sessão após exibi-los
+                            unset($_SESSION['errors']); 
                             }
                             ?>
-                            
-                <label for=nome>Nome</label><br>
+                <label for=nome>Nome*</label><br>
                 <input type="text" id="nome" class="input-global" name="Nome" placeholder="Nome"><br>
                         
-                <label for="sobrenome">Sobrenome</label><br>
+                <label for="sobrenome">Sobrenome*</label><br>
                 <input type="text" id="sobrenome" class="input-global" name="Sobrenome" placeholder="Sobrenome"><br>
                 
-                <label for="email">Email</label><br>
+                <label for="email">Email*</label><br>
                 <input type="email" id="E-Mail" name="email" class="input-padrao" placeholder="seuemail@dominio.com"><br>
 
-                <label for="telefone">Telefone</label><br>
-                <input type="tel" id="Telefone" name="telefone" class="input-padrao" placeholder="(XX) XXXXX-XXXX"><br>
+                <label for="telefone">Telefone*</label><br>
+                <input type="tel" id="Telefone" name="telefone" class="input-padrao" placeholder="XX XXXXX XXXX"><br>
 
-                <label for="datanascimento">Data de Nascimento</label><br>
+                <label for="datanascimento">Data de Nascimento*</label><br>
                 <input type="date" id="data" name="datanascimento" class="input-padrao"><br>
 
-                <label for="opinion">Diga-nos no que podemos melhorar!</label><br>
+                <label for="opinion">Diga-nos no que podemos melhorar!*</label><br>
                 <textarea id="opinion" name="opinion" rows="15" cols="70"></textarea><br>
 
                 <p>precisamos saber quanto você gastou para possível reembolso!</p>
@@ -150,12 +149,11 @@ if (empty($_SESSION['errors'])) {
     </form>
     <footer>
         Desenvolvido por: <br>
-        - Alice Lira<br>
-        - Ana Paula<br>
-        - Carlos Augusto<br>
-        - Ighor Gomes<br>
-        - Maximino Coelho<br> 
-        - Pedro Quintas<br>
+        - Ana Paula Ferreira Pessoa - 01538280<br>
+        - Carlos Augusto Nogueira Duarte - 01532606<br>
+        - Ighor Gomes Gonçalves - 24010714<br>
+        - Maximino Coelho da Silva - 01374898<br> 
+        - Pedro Augusto Borges Quintas - 01535444<br>
     </footer>
 </body>
 </html>
